@@ -1,0 +1,197 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f7f9ff;
+    color: #202c45;
+}
+
+header {
+    background: #14213d;
+    padding: 20px 7%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav h2 {
+    color: #77d8e7;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #77d8e7;
+}
+
+.hero {
+    height: 490px;
+    background:
+    linear-gradient(#14213dbb, #14213dbb),
+    url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1500")
+    center/cover;
+    display: flex;
+    align-items: center;
+    padding: 8%;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00a6b8;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.9;
+    color: #666;
+}
+
+.services {
+    background: #eaf1ff;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #0002;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.member {
+    width: 260px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #0002;
+}
+
+.member img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.member h3 {
+    margin: 12px 0 5px;
+}
+
+.member p {
+    color: #777;
+}
+
+.achievements {
+    background: #14213d;
+    color: white;
+}
+
+.achievements .cards div {
+    padding: 25px;
+}
+
+.achievements h1 {
+    font-size: 40px;
+    color: #77d8e7;
+}
+
+.testimonial {
+    background: #eaf1ff;
+    line-height: 2;
+}
+
+.testimonial p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.contact {
+    background: #14213d;
+    color: white;
+    line-height: 2;
+}
+
+footer {
+    background: #0c1529;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .card, .member {
+        width: 100%;
+    }
+}
